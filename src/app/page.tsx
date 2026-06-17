@@ -1,32 +1,33 @@
 export default function Home() {
   return (
-    <main className="min-h-screen flex items-center justify-center relative overflow-hidden"
-      style={{ background: "#faf9f7" }}>
-
-      {/* Dot grid texture */}
+    <main
+      className="min-h-screen flex items-center justify-center relative overflow-hidden"
+      style={{ background: "#faf9f7" }}
+    >
+      {/* Dot grid — absolute, pas fixed */}
       <div
-        className="pointer-events-none fixed inset-0"
+        className="absolute inset-0"
         style={{
-          backgroundImage: "radial-gradient(circle, #c8c4bc 1px, transparent 1px)",
-          backgroundSize: "28px 28px",
-          opacity: 0.45,
+          backgroundImage: "radial-gradient(circle, #9c9890 1.2px, transparent 1.2px)",
+          backgroundSize: "24px 24px",
+          opacity: 0.55,
         }}
       />
 
-      {/* Brand color wash — soft, corners */}
+      {/* Brand color washes */}
       <div
-        className="pointer-events-none fixed inset-0"
+        className="absolute inset-0"
         style={{
           background: [
-            "radial-gradient(ellipse 55% 45% at 10% 10%, rgba(230,49,135,0.09) 0%, transparent 65%)",
-            "radial-gradient(ellipse 55% 45% at 90% 85%, rgba(55,188,228,0.09) 0%, transparent 65%)",
-            "radial-gradient(ellipse 40% 35% at 85% 10%, rgba(102,187,147,0.07) 0%, transparent 65%)",
+            "radial-gradient(ellipse 55% 45% at 10% 10%, rgba(230,49,135,0.10) 0%, transparent 65%)",
+            "radial-gradient(ellipse 55% 45% at 90% 85%, rgba(55,188,228,0.10) 0%, transparent 65%)",
+            "radial-gradient(ellipse 40% 35% at 85% 10%, rgba(102,187,147,0.08) 0%, transparent 65%)",
           ].join(", "),
         }}
       />
 
       {/* Content */}
-      <div className="relative text-center space-y-8 px-4">
+      <div className="relative z-10 text-center space-y-8 px-4">
         <div className="flex justify-center">
           <img
             src="/logo-color.svg"
