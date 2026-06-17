@@ -1,45 +1,45 @@
 export default function Home() {
   return (
-    <main
-      className="min-h-screen flex items-center justify-center relative overflow-hidden"
-      style={{ background: "#f5f3ef" }}
-    >
-      {/* Grain texture overlay */}
-      <div
-        className="pointer-events-none fixed inset-0 opacity-[0.035]"
-        style={{
-          backgroundImage: `url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E")`,
-          backgroundRepeat: "repeat",
-          backgroundSize: "200px 200px",
-        }}
-      />
+    <main className="min-h-screen flex items-center justify-center relative overflow-hidden"
+      style={{ background: "#faf9f7" }}>
 
-      {/* Subtle radial glow — brand colors, very soft */}
+      {/* Dot grid texture */}
       <div
         className="pointer-events-none fixed inset-0"
         style={{
-          background:
-            "radial-gradient(ellipse 60% 50% at 30% 40%, rgba(55,188,228,0.08) 0%, transparent 70%), radial-gradient(ellipse 50% 40% at 70% 60%, rgba(230,49,135,0.07) 0%, transparent 70%)",
+          backgroundImage: "radial-gradient(circle, #c8c4bc 1px, transparent 1px)",
+          backgroundSize: "28px 28px",
+          opacity: 0.45,
         }}
       />
 
+      {/* Brand color wash — soft, corners */}
+      <div
+        className="pointer-events-none fixed inset-0"
+        style={{
+          background: [
+            "radial-gradient(ellipse 55% 45% at 10% 10%, rgba(230,49,135,0.09) 0%, transparent 65%)",
+            "radial-gradient(ellipse 55% 45% at 90% 85%, rgba(55,188,228,0.09) 0%, transparent 65%)",
+            "radial-gradient(ellipse 40% 35% at 85% 10%, rgba(102,187,147,0.07) 0%, transparent 65%)",
+          ].join(", "),
+        }}
+      />
+
+      {/* Content */}
       <div className="relative text-center space-y-8 px-4">
-        {/* Logo */}
         <div className="flex justify-center">
           <img
             src="/logo-color.svg"
             alt="Magnet.wtf"
-            className="w-72 md:w-96 h-auto"
+            className="w-80 md:w-[480px] h-auto"
           />
         </div>
 
-        {/* Tagline */}
         <p className="text-gray-500 text-lg max-w-xs mx-auto leading-relaxed">
           Your profile, your world.{" "}
           <span className="text-gray-800 font-medium">Rich, beautiful, AI-powered.</span>
         </p>
 
-        {/* CTAs */}
         <div className="flex gap-4 justify-center pt-2">
           <a
             href="/login"
@@ -51,7 +51,7 @@ export default function Home() {
           <a
             href="/waitlist"
             className="px-7 py-3 rounded-full border text-sm font-medium transition-all hover:bg-black/5"
-            style={{ borderColor: "rgba(0,0,0,0.15)", color: "#333" }}
+            style={{ borderColor: "rgba(0,0,0,0.15)", color: "#444" }}
           >
             Join waitlist
           </a>
