@@ -2,26 +2,23 @@ export default function Home() {
   return (
     <main className="min-h-screen bg-[#0a0a0a] flex items-center justify-center">
       <div className="text-center space-y-8 px-4">
-        <div className="flex items-baseline justify-center gap-0">
-          <span
-            className="text-7xl md:text-8xl font-porkys text-magnet-gradient"
-            style={{ lineHeight: 1 }}
-          >
-            magnet
+        {/* Logo wordmark — blanc, Porky's */}
+        <div className="flex items-baseline justify-center">
+          <span className="font-porkys text-white" style={{ fontSize: "7rem", lineHeight: 1 }}>
+            Magnet
           </span>
-          <span
-            className="text-7xl md:text-8xl font-porkys"
-            style={{ color: "#66bb93", lineHeight: 1 }}
-          >
+          <span className="font-porkys text-white" style={{ fontSize: "7rem", lineHeight: 1 }}>
             .wtf
           </span>
         </div>
 
+        {/* Tagline */}
         <p className="text-gray-400 text-xl max-w-sm mx-auto leading-relaxed">
           Your profile, your world.{" "}
           <span className="text-white">Rich, beautiful, AI-powered.</span>
         </p>
 
+        {/* CTAs */}
         <div className="flex gap-4 justify-center pt-2">
           <a
             href="/login"
@@ -37,12 +34,6 @@ export default function Home() {
           >
             Join waitlist
           </a>
-        </div>
-
-        <div className="flex justify-center gap-2 pt-4">
-          <span className="w-2 h-2 rounded-full" style={{ background: "#e63187" }} />
-          <span className="w-2 h-2 rounded-full" style={{ background: "#37bce4" }} />
-          <span className="w-2 h-2 rounded-full" style={{ background: "#66bb93" }} />
         </div>
       </div>
     </main>
