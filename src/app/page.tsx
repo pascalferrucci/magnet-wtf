@@ -1,29 +1,48 @@
 export default function Home() {
   return (
-    <main className="min-h-screen bg-black flex items-center justify-center">
-      <div className="text-center space-y-6 px-4">
-        <div className="inline-block">
-          <span className="text-6xl font-bold bg-gradient-to-r from-[#4ade80] via-[#60a5fa] to-[#f472b6] bg-clip-text text-transparent">
+    <main className="min-h-screen bg-[#0a0a0a] flex items-center justify-center">
+      <div className="text-center space-y-8 px-4">
+        <div className="flex items-baseline justify-center gap-0">
+          <span
+            className="text-7xl md:text-8xl font-porkys text-magnet-gradient"
+            style={{ lineHeight: 1 }}
+          >
             magnet
           </span>
-          <span className="text-gray-500 text-sm ml-1">.wtf</span>
+          <span
+            className="text-7xl md:text-8xl font-porkys"
+            style={{ color: "#66bb93", lineHeight: 1 }}
+          >
+            .wtf
+          </span>
         </div>
-        <p className="text-gray-400 text-lg max-w-md">
-          Your profile, your world. Rich, beautiful, AI-powered.
+
+        <p className="text-gray-400 text-xl max-w-sm mx-auto leading-relaxed">
+          Your profile, your world.{" "}
+          <span className="text-white">Rich, beautiful, AI-powered.</span>
         </p>
-        <div className="flex gap-4 justify-center">
+
+        <div className="flex gap-4 justify-center pt-2">
           <a
             href="/login"
-            className="px-6 py-3 rounded-full bg-white text-black text-sm font-medium hover:bg-gray-100 transition-colors"
+            className="px-7 py-3 rounded-full text-sm font-medium text-white transition-all hover:scale-105"
+            style={{ background: "linear-gradient(135deg, #e63187, #37bce4)" }}
           >
             Get started
           </a>
           <a
             href="/waitlist"
-            className="px-6 py-3 rounded-full border border-white/20 text-white text-sm font-medium hover:bg-white/5 transition-colors"
+            className="px-7 py-3 rounded-full border text-sm font-medium text-white transition-all hover:bg-white/5"
+            style={{ borderColor: "rgba(255,255,255,0.2)" }}
           >
             Join waitlist
           </a>
+        </div>
+
+        <div className="flex justify-center gap-2 pt-4">
+          <span className="w-2 h-2 rounded-full" style={{ background: "#e63187" }} />
+          <span className="w-2 h-2 rounded-full" style={{ background: "#37bce4" }} />
+          <span className="w-2 h-2 rounded-full" style={{ background: "#66bb93" }} />
         </div>
       </div>
     </main>
