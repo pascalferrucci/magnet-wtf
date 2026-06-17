@@ -2,14 +2,13 @@ export default function Home() {
   return (
     <main className="min-h-screen bg-[#0a0a0a] flex items-center justify-center">
       <div className="text-center space-y-8 px-4">
-        {/* Logo wordmark — blanc, Porky's */}
-        <div className="flex items-baseline justify-center">
-          <span className="font-porkys text-white" style={{ fontSize: "7rem", lineHeight: 1 }}>
-            Magnet
-          </span>
-          <span className="font-porkys text-white" style={{ fontSize: "7rem", lineHeight: 1 }}>
-            .wtf
-          </span>
+        {/* Logo SVG */}
+        <div className="flex justify-center">
+          <img
+            src="/logo-blanc.svg"
+            alt="Magnet.wtf"
+            className="h-24 md:h-28 w-auto"
+          />
         </div>
 
         {/* Tagline */}
