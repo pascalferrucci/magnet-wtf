@@ -147,7 +147,7 @@ export default function LoginPage() {
             <>
               <h1 className="text-xl font-semibold text-gray-900 mb-1">Sign in</h1>
               <p className="text-sm text-gray-500 mb-6">
-                We'll send a magic link to your email.
+                We&apos;ll send a magic link to your email.
               </p>
               <div className="space-y-4">
                 <input
