@@ -278,7 +278,7 @@ export default function WaitlistPage() {
           </div>
 
           {/* Center label */}
-          <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', gap: 12, paddingTop: 80, paddingBottom: 60 }}>
+          <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', gap: 12, paddingTop: 24, paddingBottom: 24 }}>
             <div style={{ fontSize: 28, fontWeight: 900, color: '#1a1a1a', letterSpacing: -1, textAlign: 'center', lineHeight: 1.2 }}>
               One profile.<br />
               <span style={{ background: 'linear-gradient(135deg, #e63187, #37bce4)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>Endless ways</span><br />
