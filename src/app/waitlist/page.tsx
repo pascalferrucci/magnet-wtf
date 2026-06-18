@@ -57,7 +57,7 @@ export default function WaitlistPage() {
             <>
               <h1 className="text-xl font-semibold text-gray-900 mb-1">Join the waitlist</h1>
               <p className="text-sm text-gray-500 mb-6">
-                Magnet is invite-only for now. Drop your email and we'll let you in when it's your turn.
+                Magnet is invite-only for now. Drop your email and we&apos;ll let you in when it&apos;s your turn.
               </p>
               <div className="space-y-4">
                 <input
@@ -99,9 +99,9 @@ export default function WaitlistPage() {
                   <polyline points="20 6 9 17 4 12" />
                 </svg>
               </div>
-              <h1 className="text-xl font-semibold text-gray-900 mb-2">You're on the list!</h1>
+              <h1 className="text-xl font-semibold text-gray-900 mb-2">You&apos;re on the list!</h1>
               <p className="text-sm text-gray-500 leading-relaxed">
-                We'll reach out to <span className="font-medium text-gray-700">{email}</span> when your spot is ready.
+                We&apos;ll reach out to <span className="font-medium text-gray-700">{email}</span> when your spot is ready.
               </p>
             </div>
           )}
