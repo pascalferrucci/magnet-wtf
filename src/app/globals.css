@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Porky's display font — file must be at public/fonts/PorkysRegular.ttf */
 @font-face {
   font-family: "Porkys";
   src: url("/fonts/PORKYS.ttf") format("truetype");
@@ -11,31 +12,7 @@
 }
 
 :root {
+  /* Magnet brand colors */
   --magnet-blue:        #37bce4;
   --magnet-pink:        #e63187;
-  --magnet-green:       #66bb93;
-  --magnet-blue-light:  #88cfe7;
-  --magnet-pink-light:  #e889b6;
-  --magnet-green-light: #8fcbb1;
-
-  --background: #0a0a0a;
-  --foreground: #ffffff;
-}
-
-body {
-  color: var(--foreground);
-  background: var(--background);
-}
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
-
-  .text-magnet-gradient {
-    background: linear-gradient(135deg, #e63187 0%, #37bce4 60%, #66bb93 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-  }
-}
+  --magnet-gr
